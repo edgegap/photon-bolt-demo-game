@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BoltHeadlessServer.unity
     guid: 6bd8c6e27ead8b54881c48cd089122b4
   - enabled: 1
