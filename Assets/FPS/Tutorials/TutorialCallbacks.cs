@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Unity.InteractiveTutorials;
 using UnityEditor;
 using UnityEngine.AI;
+using Unity.Tutorials.Core.Editor;
 
 namespace Unity.Tutorials
 {
@@ -52,8 +52,8 @@ namespace Unity.Tutorials
         /// <param name="futureObjectReference"></param>
         public void SelectSpawnedGameObject(FutureObjectReference futureObjectReference)
         {
-            if (futureObjectReference.sceneObjectReference == null) { return; }
-            Selection.activeObject = futureObjectReference.sceneObjectReference.ReferencedObjectAsGameObject;
+            if (futureObjectReference.SceneObjectReference == null) { return; }
+            Selection.activeObject = futureObjectReference.SceneObjectReference.ReferencedObjectAsGameObject;
         }
 
         public void SelectMoveTool()

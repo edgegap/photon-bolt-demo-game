@@ -19,14 +19,7 @@ MonoBehaviour:
         m_Untranslated: 
       Text:
         m_Untranslated: 
-      m_Summary: 
-      m_Description: 
-      m_InstructionBoxTitle: 
-      m_InstructionText: 
-      m_TutorialButtonText: 
       m_Tutorial: {fileID: 0}
-      m_Icons:
-        m_Items: []
       m_Image: {fileID: 2800000, guid: c8894f11065cc46569978ae415bfb87d, type: 3}
       m_Video: {fileID: 32900000, guid: 6f0ce9b5d31f44b9cbb3501409e8913f, type: 3}
       m_CriteriaCompletion: 0
@@ -47,6 +40,7 @@ MonoBehaviour:
           m_MaskSizeModifier: 0
           m_UnmaskedControls:
           - m_SelectorMode: 4
+            m_SelectorMatchType: 0
             m_GUIContent:
               m_Text: 
               m_Image: {fileID: 0}
@@ -67,6 +61,9 @@ MonoBehaviour:
                 m_Prefab: {fileID: 7389833897528589514, guid: 115dbd335d944e049a14c0345b664cf6,
                   type: 3}
               m_FutureObjectReference: {fileID: 0}
+            m_VisualElementClassName: 
+            m_VisualElementName: 
+            m_VisualElementTypeName: 
         - m_SelectorType: 1
           m_ViewType:
             m_TypeName: 
@@ -78,6 +75,11 @@ MonoBehaviour:
           m_MaskType: 0
           m_MaskSizeModifier: 0
           m_UnmaskedControls: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
     - m_Type: 0
       Title:
         m_Untranslated: Drag the Prefab into the Scene
@@ -93,14 +95,7 @@ MonoBehaviour:
 
           It works like a file explorer, and is organized
           in folders.'
-      m_Summary: 
-      m_Description: 
-      m_InstructionBoxTitle: 
-      m_InstructionText: 
-      m_TutorialButtonText: 
       m_Tutorial: {fileID: 0}
-      m_Icons:
-        m_Items: []
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
@@ -109,32 +104,35 @@ MonoBehaviour:
       m_MaskingSettings:
         m_MaskingEnabled: 0
         m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
     - m_Type: 1
       Title:
         m_Untranslated: Drag in the Room_Altar Prefab
       Text:
         m_Untranslated: Click and drag the <b>Room_Altar</b> Prefab from the <b>Project
           window</b> onto the floor in the Scene view.
-      m_Summary: 
-      m_Description: 
-      m_InstructionBoxTitle: 
-      m_InstructionText: 
-      m_TutorialButtonText: 
       m_Tutorial: {fileID: 0}
-      m_Icons:
-        m_Items: []
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
       m_Criteria:
         m_Items:
-        - type:
-            m_TypeName: Unity.InteractiveTutorials.InstantiatePrefabCriterion, Unity.InteractiveTutorials.Core,
+        - Type:
+            m_TypeName: Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion, Unity.Tutorials.Core.Editor,
               Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-          criterion: {fileID: 114155400192661620}
+          Criterion: {fileID: 114155400192661620}
       m_MaskingSettings:
         m_MaskingEnabled: 0
         m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
   m_CameraSettings:
     m_CameraMode: 1
     m_FocusMode: 0
@@ -155,22 +153,40 @@ MonoBehaviour:
     m_Untranslated: Next
   DoneButton:
     m_Untranslated: Done
-  m_NextButton: 
-  m_DoneButton: 
   m_CompletedSound: {fileID: 8300000, guid: 93fbb109633e844259ea828442bda0cb, type: 3}
-  m_autoAdvance: 1
+  m_AutoAdvance: 1
+  Showing:
+    m_PersistentCalls:
+      m_Calls: []
+  Shown:
+    m_PersistentCalls:
+      m_Calls: []
+  Staying:
+    m_PersistentCalls:
+      m_Calls: []
+  CriteriaValidated:
+    m_PersistentCalls:
+      m_Calls: []
+  MaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  NonMaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnBeforePageShown:
     m_PersistentCalls:
       m_Calls: []
   m_OnAfterPageShown:
     m_PersistentCalls:
       m_Calls: []
-  m_OnBeforeTutorialQuit:
-    m_PersistentCalls:
-      m_Calls: []
   m_OnTutorialPageStay:
     m_PersistentCalls:
       m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_NextButton: 
+  m_DoneButton: 
 --- !u!114 &114155400192661620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,6 +199,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3e7c665e4144f519b7ee9de726ea5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Completed:
+    m_PersistentCalls:
+      m_Calls: []
+  Invalidated:
+    m_PersistentCalls:
+      m_Calls: []
   m_PrefabParent: {fileID: 7389833897528589514, guid: 115dbd335d944e049a14c0345b664cf6,
     type: 3}
   m_FuturePrefabInstances:
